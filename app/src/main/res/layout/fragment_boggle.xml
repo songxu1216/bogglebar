@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:id="@+id/boggle_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:padding="8dp"
+        android:rowCount="4"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/button00"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button02"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button03"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button04"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button05"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button06"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button07"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button08"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button09"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:background="@drawable/letter_button_default"
+            android:textSize="24sp" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:onClick="onClearClicked"
+            android:text="Clear"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:onClick="onSubmitClicked"
+            android:text="Submit"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/current_word_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
