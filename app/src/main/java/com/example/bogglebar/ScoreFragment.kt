@@ -10,7 +10,7 @@ import android.widget.TextView
 
 class ScoreFragment : Fragment() {
 
-    private lateinit var scoreTextView: TextView
+    lateinit var scoreTextView: TextView
     private lateinit var newGameButton: Button
     private lateinit var newGameListener: OnNewGameListener
 

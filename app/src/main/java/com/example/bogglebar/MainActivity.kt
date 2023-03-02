@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity(), BoggleFragment.OnWordSelectedListener,
     private lateinit var boggleFragment: BoggleFragment
     private lateinit var scoreFragment: ScoreFragment
     private lateinit var dictionary: Set<String>
-    private var score = 0
+    var score = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity(), BoggleFragment.OnWordSelectedListener,
         }
     }
 
-    private fun loadDictionary(): Set<String> {
+    fun loadDictionary(): Set<String> {
         val inputStream = assets.open("words.txt")
         val reader = BufferedReader(InputStreamReader(inputStream))
         val words = mutableSetOf<String>()
